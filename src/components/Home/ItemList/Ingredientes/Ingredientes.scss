@@ -1,0 +1,15 @@
+.ingredientes {
+	.MuiCard-root {
+		width: 200px;
+		height: 370;
+		margin: 10px;
+
+		.MuiCardActions-root {
+			justify-content: space-around;
+		}
+
+		.MuiCardHeader-root{
+			height: 96px;
+		}
+	}
+}
