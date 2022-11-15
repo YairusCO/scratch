@@ -1,8 +1,14 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react'
 import './App.css';
 import Home from '../Home'
 
-function App() {
+function App({appWillUnmount,appMounted}) {
+  useEffect(() => {
+    appMounted()
+    return () => {
+      appWillUnmount()
+    }
+  }, [appMounted, appWillUnmount])
   return (
     <div className="App">
       <Home/>
